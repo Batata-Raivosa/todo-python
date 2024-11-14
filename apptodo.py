@@ -1,5 +1,5 @@
 
-from funcoes import adicionar_tarefa,ver_tarefas, tarefas
+from funcoes import adicionar_tarefa,ver_tarefas, tarefas, atualizar_nome_tarefa,completar_tarefa,deletar_tarefas_completadas
 
 while True:
   print("\nMenu do Gerenciador de Lista de tarefas:")
