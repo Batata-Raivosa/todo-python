@@ -1,0 +1,1 @@
+print("Função da aplicação")
