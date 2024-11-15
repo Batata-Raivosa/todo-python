@@ -2,13 +2,15 @@
 from funcoes import adicionar_tarefa,ver_tarefas, tarefas, atualizar_nome_tarefa,completar_tarefa,deletar_tarefas_completadas
 
 while True:
-  print("\nMenu do Gerenciador de Lista de tarefas:")
-  print("1. Adicionar tarefa")
-  print("2. Ver tarefas")
-  print("3. Atualizar Tarefas")
-  print("4. Completar Tarefas")
-  print("5. Deletar tarefas completadas")
-  print("6. Sair")
+  print("""
+    \nMenu do Gerenciador de Lista de tarefas:
+    1. Adicionar tarefa
+    2. Ver tarefas
+    3. Atualizar Tarefas
+    4. Completar Tarefas")
+    5. Deletar tarefas completadas
+    6. Sair
+  """)
 
   escolha = int(input("Digite a sua escolha: "))
 
@@ -35,12 +37,12 @@ while True:
     indice_tarefa = int(input("Digite o número da tarefa que deseja completar: "))
     completar_tarefa(tarefas, indice_tarefa)
 
-  elif escolha ==5:
+  elif escolha == 5:
     print("\n ---------- Deletar Tarefas completadas ----------")
     deletar_tarefas_completadas(tarefas)
     ver_tarefas(tarefas)
 
-  elif escolha ==6:
+  elif escolha == 6:
     break
 
 print("Programa finalizado")
